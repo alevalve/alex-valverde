@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Gabriel</title>
+    <meta name="description" content="Alexander Valverde - 3D Vision Researcher at UCSC VLAA Lab & Lead ML Engineer specializing in 3D Reconstruction, Neural Rendering, Gaussian Splatting, and Sports Analytics">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #222;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            font-size: 16px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .news-item {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .news-item::before {
+            content: "- ";
+            position: absolute;
+            left: 0;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .publication {
+            margin-bottom: 25px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .pub-authors {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .pub-venue {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .pub-links {
+            margin-top: 8px;
+        }
+
+        .pub-links a {
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .exp-title {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .exp-org {
+            color: #0066cc;
+        }
+
+        .exp-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .exp-description {
+            margin-top: 10px;
+        }
+
+        .exp-description ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .exp-description li {
+            margin-bottom: 8px;
+        }
+
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .skills-section {
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category strong {
+            color: #333;
+        }
+
+        .projects-section {
+            margin-top: 20px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .research-interests {
+            margin: 20px 0;
+        }
+
+        .interests-list {
+            color: #666;
+        }
+
+        .nav-menu {
+            margin: 20px 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            margin: 0 15px;
+            font-weight: 500;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links-top {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px 0;
+        }
+
+        .contact-links-top a {
+            margin: 0 12px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .contact-links-top a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .contact-links-top a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .nav-menu a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <header>
+        <h1>Alexander Gabriel Valverde Guillén</h1>
+    </header>
+
+    <div class="contact-links-top">
+        <a href="https://github.com/alexvalgui" target="_blank">Github</a>
+        <a href="#" target="_blank">Google Scholar</a>
+        <a href="https://linkedin.com/in/alevalve" target="_blank">LinkedIn</a>
+        <a href="tel:+18312394896">Phone: (831) 239-4896</a>
+        <a href="mailto:alexandervalverdeguillen@gmail.com">E-mail</a>
+    </div>
+
+    <div class="intro">
+        I am a Visiting Researcher in <a href="https://ucsc-vlaa.github.io/" target="_blank">VLAA lab</a>, UCSC, working on 3D, Surface Reconstruction, and Optimization Methods for Vision. I completed my M.Sc. in Scientific Computing and Applied Mathematics at UC Santa Cruz in 2025 (finished 2-year program in 1 year with thesis), and previously got my B.Sc. in Economics from Universidad Latinoamericana de Ciencia y Tecnología, Costa Rica. Right now, I am working as the Lead Machine Learning Engineer in a sports betting company.
+        
+        <div class="research-interests">
+            <strong>Research Interests:</strong> <span class="interests-list">3D Reconstruction • Geometry Processing • Neural Rendering • Optimization Methods for Vision • Gaussian Splatting</span>
+        </div>
+    </div>
+
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <span class="news-date">2025-03:</span> Accepted paper at <a href="#">ICCV 2025, CV4E Workshop</a>: "Back Home: A Computer Vision Solution to Seashell Identification for Ecological Restoration."
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025-07:</span> Started position as Lead Machine Learning Engineer at Plannatech, working on sports analytics and diffusion-based synthetic data generation.
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025-06:</span> Successfully defended M.Sc. thesis: "Convex-Guided Outlier Removal for 3D Point Clouds."
+        </div>
+        <div class="news-item">
+            <span class="news-date">2024-09:</span> Started MSc journey at UCSC VLAA lab, working on 3D vision and convex optimization.
+        </div>
+        <div class="news-item">
+            <span class="news-date">2022-09:</span> Started as Machine Learning Engineer at FIFCO, building large-scale vision systems.
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications and Preprints</h2>
+
+        <div class="publication">
+            <div class="pub-title">Back Home: A Computer Vision Solution to Seashell Identification for Ecological Restoration</div>
+            <div class="pub-authors">Alexander Gabriel Valverde Guillén</div>
+            <div class="pub-venue">ICCV 2025, CV4E Workshop</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2501.04873" target="_blank">[paper]</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Convex-Guided Outlier Removal for 3D Point Clouds</div>
+            <div class="pub-authors">Alexander Gabriel Valverde Guillén</div>
+            <div class="pub-venue">M.Sc. Thesis, University of California, Santa Cruz, 2025</div>
+            <div class="pub-links">
+                <a href="https://www.proquest.com/docview/3234097110/6F7FE6F4FFA24189PQ/1?accountid=14523&sourcetype=Dissertations%20&%20Theses" target="_blank">[thesis]</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="exp-title">Lead Machine Learning Engineer</div>
+            <div class="exp-org">Plannatech</div>
+            <div class="exp-date">July 2025</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-title">Machine Learning Engineer</div>
+            <div class="exp-org">FIFCO</div>
+            <div class="exp-date">September 2022 – September 2024</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        
+        <div class="experience-item">
+            <div class="exp-title">M.Sc. Scientific Computing and Applied Mathematics</div>
+            <div class="exp-org"><a href="https://www.ucsc.edu/" target="_blank">University of California, Santa Cruz</a></div>
+            <div class="exp-date">June 2025</div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-title">B.Sc. Economics</div>
+            <div class="exp-org">Universidad Latinoamericana de Ciencia y Tecnología</div>
+            <div class="exp-date">May 2022</div>
+        </div>
+    </section>
+
+    <section id="awards"></section>
+        <h2>Awards</h2>
+        
+        <div class="experience-item">
+            <div class="exp-title">President of the School of Economics</div>
+            <div class="exp-org">Universidad Latinoamericana de Ciencia y Tecnología</div>
+            <div class="exp-date">Academic Year 2021-2022</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="projects-section">
+            <div class="project-item">
+                <div class="project-title">Scene Graph to Unreal Blockout</div>
+                <p>A pipeline that converts scene graph representations into 3D blockout layouts for Unreal Engine, enabling rapid prototyping of virtual environments from semantic descriptions provided by a Large Language Model.</p>
+                <div class="pub-links">
+                    <a href="https://github.com/alevalve/scene_unreal_blockout" target="_blank">[code]</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">ConvMesh</div>
+                <p>Implementation of convex optimization techniques for mesh reconstruction and surface smoothing, focusing on preserving geometric details. Project for AM229-Convex Optimization.</p>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2412.08484" target="_blank">[preprint]</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">3D Augmented-Reality Visualizations</div>
+                <p>Two AR elements developed for a conference paper using JavaScript libraries (Mind-AR), implemented with color and alpha videos displayed based on marker images created using computer vision tools.</p>
+                <div class="pub-links">
+                    <a href="https://github.com/alevalve/backhome_ar_crab" target="_blank">[crab-code]</a>
+                    <a href="https://github.com/alevalve/backhome_ar_seashell" target="_blank">[crab-seashell]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="misc">
+        <h2>Misc</h2>
+        <p>I am passionate about the intersection of computer vision and real-world applications, particularly in ecological restoration and 3D reconstruction. When not working on research, I enjoy exploring hanging out and going to the gym.</p>
+        
+        <p>My Spanish name is Alexander Gabriel Valverde Guillén.</p>
+    </section>
+</body>
+</html>
