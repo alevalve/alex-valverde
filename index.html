@@ -1,5 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(135deg, #1a1a1a, #0d0d0d 60%, #1a1a1a);
+        padding: 30px 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(102, 179, 255, 0.15);
+        margin-bottom: 35px;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .header-container:hover {
+        box-shadow: 0 0 25px rgba(102, 179, 255, 0.3);
+    }
+    
+    .profile-pic {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #333;
+        box-shadow: 0 0 12px rgba(102, 179, 255, 0.2);
+    }
+    
+    .header-text h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    
+    .contact-links-top {
+        margin-top: 5px;
+    }
+    
+    .contact-links-top a {
+        margin: 0 10px;
+        font-size: 15px;
+        color: #66b3ff;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .contact-links-top a:hover {
+        color: #99ccff;
+        transform: translateY(-2px);
+    }
+    
+    /* --- ICON STYLING --- */
+    .contact-links-top i {
+        margin-right: 6px;
+    }
+    
+    /* --- NAV MENU REWORK --- */
+    .nav-menu {
+        text-align: center;
+        background: #141414;
+        padding: 15px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255,255,255,0.05);
+    }
+    
+    .nav-menu a {
+        margin: 0 15px;
+        font-weight: 500;
+        color: #e6e6e6;
+        text-decoration: none;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+    
+    .nav-menu a:hover {
+        color: #66b3ff;
+        border-bottom: 2px solid #66b3ff;
+    }
+    
+    @media (max-width: 768px) {
+        .header-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .profile-pic {
+            margin-bottom: 15px;
+        }
+    
+        .contact-links-top a {
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -320,18 +415,19 @@
 </head>
 <body>
     <div class="header-container">
-        <img src="https://raw.githack.com/alevalve/alex-valverde/main/picture.JPG" alt="Profile Photo" class="profile-pic">
+        <img src="https://raw.githack.com/alevalve/alex-valverde/main/picture.JPG" 
+             alt="Profile Photo" class="profile-pic">
         <div class="header-text">
             <h1>Alexander Gabriel</h1>
             <div class="contact-links-top">
-                <a href="https://github.com/alevalve" target="_blank">Github</a>
-                <a href="https://scholar.google.com/citations?user=hj5VZJMAAAAJ&hl=es&authuser=1" target="_blank">Google Scholar</a>
-                <a href="https://www.linkedin.com/in/alexvalgui/" target="_blank">LinkedIn</a>
-                <a href="tel:+18312394896">Phone</a>
-                <a href="mailto:alexandervalverdeguillen@gmail.com">E-mail</a>
+                <a href="https://github.com/alevalve" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://scholar.google.com/citations?user=hj5VZJMAAAAJ&hl=es&authuser=1" target="_blank"><i class="fa-solid fa-graduation-cap"></i>Scholar</a>
+                <a href="https://www.linkedin.com/in/alexvalgui/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="tel:+18312394896"><i class="fa-solid fa-phone"></i>Phone</a>
+                <a href="mailto:alexandervalverdeguillen@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
             </div>
         </div>
-    </div>    
+    </div>     
     <nav class="nav-menu">
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
