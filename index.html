@@ -10,8 +10,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #e6e6e6;              /* light text */
-            background-color: #0d0d0d;   /* deep black background */
+            color: #e6e6e6;
+            background-color: #0d0d0d;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
@@ -22,7 +22,7 @@
             font-size: 32px;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #ffffff;              /* white headings */
+            color: #ffffff;
         }
     
         h2 {
@@ -31,7 +31,7 @@
             margin-top: 40px;
             margin-bottom: 20px;
             color: #ffffff;
-            border-bottom: 1px solid #222;  /* subtle dark divider */
+            border-bottom: 1px solid #222;
             padding-bottom: 10px;
         }
     
@@ -49,7 +49,7 @@
         }
     
         a {
-            color: #66b3ff;              /* bright link color */
+            color: #66b3ff;
             text-decoration: none;
         }
     
@@ -104,7 +104,7 @@
         }
     
         .pub-venue {
-            color: #b3b3b3;              /* secondary text */
+            color: #b3b3b3;
             margin-bottom: 8px;
         }
     
@@ -232,25 +232,37 @@
             text-decoration: underline;
         }
     
-        /* Small, centered media previews */
+        /* Left-aligned, compact media (like original style) */
         .media {
             margin-top: 10px;
-            text-align: center;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
         }
+    
         .media img {
-            width: 250px;                /* compact size */
-            height: auto;                /* keep aspect ratio */
-            object-fit: cover;
+            width: 250px;
+            height: auto;
             border-radius: 8px;
             border: 1px solid #333;
             display: block;
-            margin: 0 auto;              /* center the image */
+            object-fit: cover;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
         }
+    
         .media .caption {
             font-size: 13px;
             color: #999;
             margin-top: 5px;
+            text-align: left;
+        }
+    
+        /* Prevent layout overlap after floating images */
+        .publication::after,
+        .project-item::after {
+            content: "";
+            display: block;
+            clear: both;
         }
     
         .contact-links-top {
@@ -275,15 +287,25 @@
             body {
                 padding: 20px 15px;
             }
-            
+    
             h1 {
                 font-size: 28px;
             }
-            
+    
             h2 {
                 font-size: 22px;
             }
-            
+    
+            .media {
+                float: none;
+                text-align: center;
+                margin: 10px auto;
+            }
+    
+            .media img {
+                width: 80%;
+            }
+    
             .contact-links-top a {
                 display: block;
                 margin: 5px 0;
@@ -294,7 +316,7 @@
                 margin: 5px 10px;
             }
         }
-    </style>    
+    </style>       
 </head>
 <body>
     <div class="header-container">
