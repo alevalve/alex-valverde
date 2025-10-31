@@ -227,6 +227,23 @@
             text-decoration: underline;
         }
 
+        .media {
+            margin-top: 10px;
+        }
+        .media img {
+            width: 100%;
+            height: 220px;              /* adjust to taste */
+            object-fit: cover;          /* crops nicely while keeping aspect */
+            border-radius: 8px;
+            border: 1px solid #eee;
+            display: block;
+        }
+        .media .caption {
+            font-size: 13px;
+            color: #666;
+            margin-top: 6px;
+        }
+
         .contact-links-top {
             text-align: center;
             margin-bottom: 15px;
@@ -322,14 +339,20 @@
     <section id="publications">
         <h2>Publications and Preprints</h2>
 
-        <div class="publication"></div>
+        <div class="publication">
             <div class="pub-title">GauSSmart: Enhanced 3D Reconstruction through 2D Foundation Models and Geometric Filtering</div>
             <div class="pub-authors">Alexander Valverde, Brian Xu, Yuyin Zhou, Meng Xu, Hongyun Wang</div>
             <div class="pub-venue">In Review</div>
             <div class="pub-links">
                 <a href="http://arxiv.org/abs/2510.14270" target="_blank">[paper]</a>
             </div>
-        </div>
+        
+            <a class="media" href="http://arxiv.org/abs/2510.14270" target="_blank" aria-label="Open GauSSmart paper">
+                <img src="https://raw.githack.com/alevalve/alex-valverde/main/Gaussmart.png"
+                     alt="GauSSmart: sample reconstruction teaser"
+                     loading="lazy" width="1200" height="675">
+              </a>
+            </div>
 
         <div class="publication">
             <div class="pub-title">Back Home: A Computer Vision Solution to Seashell Identification for Ecological Restoration</div>
@@ -340,6 +363,13 @@
             </div>
         </div>
 
+        <a class="media" href="https://arxiv.org/abs/2501.04873" target="_blank" aria-label="Open Back Home paper">
+            <img src="https://raw.githack.com/alevalve/alex-valverde/main/BackHome.jpg"
+                 alt="Back Home: paper"
+                 loading="lazy" width="1200" height="675">
+          </a>
+        </div>
+
         <div class="publication">
             <div class="pub-title">Convex-Guided Outlier Removal for 3D Point Clouds</div>
             <div class="pub-authors">Alexander Valverde</div>
@@ -347,6 +377,11 @@
             <div class="pub-links">
                 <a href="https://www.proquest.com/docview/3234097110/6F7FE6F4FFA24189PQ/1?accountid=14523&sourcetype=Dissertations%20&%20Theses" target="_blank">[thesis]</a>
             </div>
+            <a class="media" href="https://www.proquest.com/docview/3234097110/6F7FE6F4FFA24189PQ/1?accountid=14523&sourcetype=Dissertations%20&%20Theses" target="_blank" aria-label="Open thesis">
+                <img src="https://raw.githack.com/alevalve/alex-valverde/main/Thesis.jpg"
+                     alt="Point cloud outlier removal pipeline"
+                     loading="lazy" width="1200" height="675">
+              </a>
         </div>
     </section>
 
@@ -410,8 +445,13 @@
                 <a href="https://github.com/alevalve/backhome_ar_crab" target="_blank">[crab-code]</a>
                 <a href="https://github.com/alevalve/backhome_ar_seashell" target="_blank">[crab-seashell]</a>
             </div>
+            <a class="media" href="https://github.com/alevalve/backhome_ar_seashell" target="_blank" aria-label="Open AR project repo">
+                <img src="https://raw.githack.com/alevalve/alex-valverde/main/AR1.png"
+                     alt="AR visualization triggered by marker image"
+                     loading="lazy" width="1200" height="675">
+              </a>
         </div>
- 
+    </section>
 
     <section id="misc">
         <h2>Misc</h2>
