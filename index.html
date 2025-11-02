@@ -334,17 +334,16 @@
             margin-right: 15px;
             margin-bottom: 10px;
         }
-    
+        
         .media img {
             width: 250px;
-            height: auto;
+            height: auto;  /* Maintains original aspect ratio */
             border-radius: 8px;
             border: 1px solid #333;
             display: block;
-            object-fit: cover;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
         }
-    
+            
         .media .caption {
             font-size: 13px;
             color: #999;
@@ -571,20 +570,31 @@
             </div>
         </div>
     
-        <a class="media" href="https://raw.githack.com/alevalve/alex-valverde/main/AR1" target="_blank" aria-label="Open AR project repo">
-            <video 
-                src="AR1.mov"
-                width="1200"
-                height="675"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="auto"
-                style="border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.3);">
-            </video>
-        </a>
-    </div>
+        <div class="project-item">
+            <div class="project-title">3D Augmented-Reality Visualizations</div>
+            <p>Two AR elements developed for a conference paper using JavaScript libraries (Mind-AR), implemented with color and alpha videos displayed based on marker images created using computer vision tools.</p>
+            <div class="pub-links">
+                <a href="https://github.com/alevalve/backhome_ar_crab" target="_blank">[crab-code]</a>
+                <a href="https://github.com/alevalve/backhome_ar_seashell" target="_blank">[crab-seashell]</a>
+            </div>
+            <a class="media" href="https://github.com/alevalve/backhome_ar_seashell" target="_blank" aria-label="Open AR project repo">
+                <video 
+                    src="AR1.mov"
+                    width="1200"
+                    height="375"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    style="
+                        border-radius: 12px;
+                        display: block;
+                        margin-left: -455px;
+                    ">
+                </video>
+            </a>
+        </div>
     </section>
 </body>
 </html>
